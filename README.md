@@ -16,3 +16,7 @@ https://www.kaggle.com/pablocastilla/predict-stock-prices-with-lstm/notebook
 
 What is LSTM? (General Information)
 https://en.wikipedia.org/wiki/Long_short-term_memory
+
+Keras: https://keras.io/
+
+Tensorflow: https://www.tensorflow.org/
