@@ -11,10 +11,14 @@ Stock and ETFs prices are predicted using LSTM network (Keras-Tensorflow).
 - Root mean squared errors are calculated.
 - Output files:  lstm_results (consists of prediction and actual values), plot file (actual and prediction values).
 
-Reference:
+
+**Output**: 
+![dis_prediction_and_actualprice](https://user-images.githubusercontent.com/10358317/37895737-e01ed832-30ea-11e8-9249-9b69ae2eccff.png)
+
+**Reference**:
 https://www.kaggle.com/pablocastilla/predict-stock-prices-with-lstm/notebook
 
-What is LSTM? (General Information)
+**What is LSTM? (General Information)**
 https://en.wikipedia.org/wiki/Long_short-term_memory
 
 Keras: https://keras.io/
