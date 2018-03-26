@@ -12,7 +12,6 @@ Stock and ETFs prices are predicted using LSTM network (Keras-Tensorflow).
 - Output files:  lstm_results (consists of prediction and actual values), plot file (actual and prediction values).
 
 
-**Output**: 
 ![dis_prediction_and_actualprice](https://user-images.githubusercontent.com/10358317/37895737-e01ed832-30ea-11e8-9249-9b69ae2eccff.png)
 
 **Reference**:
