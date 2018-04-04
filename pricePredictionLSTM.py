@@ -59,7 +59,7 @@ model.add(LSTM(25, input_shape=(1, look_back)))
 model.add(Dropout(0.1))
 model.add(Dense(1))
 model.compile(loss='mse', optimizer='adam')
-model.fit(trainX, trainY, epochs=100, batch_size=240, verbose=1)
+model.fit(trainX, trainY, epochs=1000, batch_size=240, verbose=1)
 
 # make predictions
 trainPredict = model.predict(trainX)
