@@ -50,15 +50,14 @@ In this tutorial, we are focusing on recurrent networks, especially LSTM. Basic 
 
 "Long short-term memory (LSTM) units are units of a recurrent neural network (RNN). An RNN composed of LSTM units is often called an LSTM network. A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell"
 
-Long Short Term Memory (LSTM) is a type of deep learning model that is mostly used for analysis of sequential data (time series data prediction). There are different application areas that are used: Language model, neural machine translation, music generation, time series prediction, financial prediction, etc.
+Long Short Term Memory (LSTM) is a type of deep learning model that is mostly used for analysis of sequential data (time series data prediction). There are different application areas that are used: Language model, neural machine translation, music generation, time series prediction, financial prediction, etc. 
 
 LSTM was proposed in 1997 by Sepp Hochreiter and Jürgen Schmidhuber and improved in 2000 by Felix Gers' team.
 [Paper](https://www.bioinf.jku.at/publications/older/2604.pdf) 
 
-* Code is adapted from Andrew Ng's Course 'Sequential models'.
 
 ### LSTM Cell <a name="LSTMCell"></a>
-*  also basic structure of LSTM to learn structure of basic LSTM (LSTM cell forward, LSTM cell backward, etc..).  LSTM is used for time series
+
 <img width="886" alt="lstm_cell" src="https://user-images.githubusercontent.com/10358317/44312843-34a8bc80-a407-11e8-96c3-cc2bc07f1500.png">
 
 ### LSTM Forward Pass <a name="LSTMForward"></a>
@@ -90,7 +89,7 @@ Stock and ETFs prices are predicted using LSTM network (Keras-Tensorflow).
 ## References: <a name="References"></a>
 - Andrew Ng, Sequential Models Course, Deep Learning Specialization
 - https://www.kaggle.com/pablocastilla/predict-stock-prices-with-lstm/notebook
-
+- Basic LSTM Code is  adapted from Andrew Ng's Course 'Sequential models'.
 
 
 
