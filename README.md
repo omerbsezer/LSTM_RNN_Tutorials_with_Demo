@@ -12,6 +12,7 @@ There are many LSTM tutorials, courses, papers in the internet. This one summari
     - [RNN Cell](#RNNCell)
     - [RNN Forward Pass](#RNNForward)
     - [RNN Backward Pass](#RNNBackward)
+    - [RNN Problem](#RNNProblem)
 - [What is LSTM?](#whatisLSTM)
     - [LSTM Cell](#LSTMCell)
     - [LSTM Forward Pass](#LSTMForward)
@@ -47,7 +48,7 @@ Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Predict
 
 <img width="851" alt="rnn_cell_backprop" src="https://user-images.githubusercontent.com/10358317/44312587-661f8900-a403-11e8-831b-2cd7fae23dfb.png">
 
-### RNN Problem 
+### RNN Problem <a name="RNNProblem"></a>
 - In theory, RNNs are absolutely capable of handling such “long-term dependencies.” 
 - In practice, RNNs don’t seem to be able to learn them. 
 - The problem was explored in depth by Hochreiter (1991) [German] and Bengio, et al. (1994) with [LSTM](https://www.bioinf.jku.at/publications/older/2604.pdf)
