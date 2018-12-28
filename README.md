@@ -1,8 +1,8 @@
 # LSTM and RNN Tutorial with Demo (with Stock/Bitcoin Time Series Prediction, Sentiment Analysis, Music Generation)
 
-There are many LSTM tutorials, courses, papers in the internet. This one summarizes all of them. In this tutorial, there are different section: Introduction to Deep Learning, Recurrent Neural Networks (RNN), Long Short Term Memory (LSTM), Stock Price Prediction using LSTM.  
+There are many LSTM tutorials, courses, papers in the internet. This one summarizes all of them. In this tutorial, RNN Cell, RNN Forward and Backward Pass, LSTM Cell, LSTM Forward Pass, Sample LSTM Project: Prediction of Stock Prices Using LSTM network, Sample LSTM Project:Sentiment Analysis, Sample LSTM Project:Music Generation. It will continue to be updated over time.
 
-**Keywords: Deep Learning, LSTM, RNN, Stock/Bitcoin price prediction, Sample Code, Basic LSTM, Basic RNN**
+**Keywords: Deep Learning, LSTM, RNN, Stock/Bitcoin price prediction, Sentiment Analysis, Music Generation, Sample Code, Basic LSTM, Basic RNN**
 
 **NOTE: This tutorial is only for education purpose. It is not academic study/paper. All related references are listed at the end of the file.**
 
@@ -22,7 +22,7 @@ There are many LSTM tutorials, courses, papers in the internet. This one summari
     - [DataSet](#SentimentDataSet)
     - [Embeddings](#SentimentEmbeddings)
     - [LSTM Model in Sentiment Analysis](#SentimentLSTM)
-- [SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network](#MusicGeneration)
+- [SAMPLE LSTM CODE: Music Generation](#MusicGeneration)
     - [How to Run Code?](#MusicHowToRunCode)
     - [Input File and Parameters](#MusicInput)
     - [LSTM Model in Music Generation](#MusicLSTM)
