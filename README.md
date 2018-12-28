@@ -1,4 +1,4 @@
-# LSTM and RNN Tutorial with Stock/Bitcoin Time Series Prediction Code Example
+# LSTM and RNN Tutorial with Demo (with Stock/Bitcoin Time Series Prediction, Sentiment Analysis, Music Generation)
 
 There are many LSTM tutorials, courses, papers in the internet. This one summarizes all of them. In this tutorial, there are different section: Introduction to Deep Learning, Recurrent Neural Networks (RNN), Long Short Term Memory (LSTM), Stock Price Prediction using LSTM.  
 
@@ -18,9 +18,18 @@ There are many LSTM tutorials, courses, papers in the internet. This one summari
     - [LSTM Forward Pass](#LSTMForward)
 - [SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network](#SampleStock)
 - [SAMPLE LSTM CODE: Sentiment Analysis](#Sentiment)
-- [SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network](#Music)
+    - [Results](#SentimentResults)
+    - [DataSet](#SentimentDataSet)
+    - [Embeddings](#SentimentEmbeddings)
+    - [LSTM Model in Sentiment Analysis](#SentimentLSTM)
+- [SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network](#MusicGeneration)
+    - [How to Run Code?](#MusicHowToRunCode)
+    - [Input File and Parameters](#MusicInput)
+    - [LSTM Model in Music Generation](#MusicLSTM)
+    - [Predicting and Sampling](#MusicPredictingAndSampling)
 - [Resources](#Resources)
 - [References](#References)
+  
   
 ## What is Deep Learning (DL)? <a name="whatisDL"></a>
 
@@ -163,7 +172,7 @@ LSTM model structure is:
 
 Model is implemented with "djmodel(Tx, n_a, n_values)" function.
 
-Predicting and Sampling:
+### Predicting and Sampling: <a name="MusicPredictingAndSampling"></a>
 
 Adding model, predicting and sampling feature, model structure is: 
 
