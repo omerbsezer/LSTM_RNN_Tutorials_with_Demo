@@ -16,7 +16,9 @@ There are many LSTM tutorials, courses, papers in the internet. This one summari
 - [What is LSTM?](#whatisLSTM)
     - [LSTM Cell](#LSTMCell)
     - [LSTM Forward Pass](#LSTMForward)
-- [SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network](#Sample)
+- [SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network](#SampleStock)
+- [SAMPLE LSTM CODE: Sentiment Analysis](#Sentiment)
+- [SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network](#Music)
 - [Resources](#Resources)
 - [References](#References)
   
@@ -77,7 +79,7 @@ Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Predict
 <img width="860" alt="lstm_fw" src="https://user-images.githubusercontent.com/10358317/44312846-3a060700-a407-11e8-878e-f1ce14cc98b4.png">
 
 
-## SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network <a name="Sample"></a>
+## SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network <a name="SampleStock"></a>
 Stock and ETFs prices are predicted using LSTM network (Keras-Tensorflow).
 
 Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Prediction/tree/master/Stock_Prices_Prediction_Example
@@ -92,19 +94,98 @@ Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Predict
 - Root mean squared errors are calculated.
 - Output files:  [lstm_results](https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Prediction/blob/master/Stock_Prices_Prediction_Example/lstm_result.csv) (consists of prediction and actual values), plot file (actual and prediction values).
 
-
 ![dis_prediction_and_actualprice](https://user-images.githubusercontent.com/10358317/37895737-e01ed832-30ea-11e8-9249-9b69ae2eccff.png)
+
+## SAMPLE LSTM CODE: Sentiment Analysis <a name="Sentiment"></a>
+
+Sentiment Analysis is an analysis of the sentence, text at the document that gives us the opinion of the sentence/text. In this project, it will be implemented a model which inputs a sentence and finds the most appropriate emoji to be used with this sentence. Code is adapted from Andrew Ng's Course 'Sequential Models'.
+
+**NOTE:This project is adapted from Andrew Ng, Sequential Models Course, Deep Learning Specialization for educational purpose**
+
+### Results <a name="SentimentResults"></a>
+
+![resultsemoji](https://user-images.githubusercontent.com/10358317/43802983-1fe753e4-9aa0-11e8-9b9e-b87fe91e0c18.jpg)
+
+### DataSet <a name="SentimentDataSet"></a>
+We have a tiny dataset (X, Y) where:
+
+* X contains 127 sentences (strings)
+* Y contains a integer label between 0 and 4 corresponding to an emoji for each sentence
+
+<img width="847" alt="data_set" src="https://user-images.githubusercontent.com/10358317/43802586-eac883e6-9a9e-11e8-8f13-6471cc16a3d8.png">
+
+### Embeddings <a name="SentimentEmbeddings"></a>
+
+Glove 50 dimension, 40000 words of dictionary file is used for word embeddings. It should be downloaded from  https://www.kaggle.com/watts2/glove6b50dtxt (file size = ~168MB))
+
+
+* word_to_index: dictionary mapping from words to their indices in the vocabulary (400,001 words, with the valid indices ranging from 0 to 400,000)
+* index_to_word: dictionary mapping from indices to their corresponding words in the vocabulary
+* word_to_vec_map: dictionary mapping words to their GloVe vector representation.
+
+### LSTM Model in Sentiment Analysis <a name="SentimentLSTM"></a>
+
+LSTM structure is used for classification.
+
+<img width="833" alt="emojifier-v2" src="https://user-images.githubusercontent.com/10358317/43802664-22c08c8a-9a9f-11e8-83e1-fea4bf334f6e.png">
+
+Parameters:
+
+![lstm_struct](https://user-images.githubusercontent.com/10358317/43803021-416cc59e-9aa0-11e8-8b28-6045dd0ead87.jpg)
+
+## SAMPLE LSTM CODE: Music Generation  <a name="MusicGeneration"></a>
+
+With trained DL model (LSTM), new sequences of time series data can be predicted. In this project, it will be implemented a model which inputs a sample jazz music and samples/generates a new music. Code is adapted from Andrew Ng's Course 'Sequential models'.
+
+**NOTE:This project is adapted from Andrew Ng, Sequential Models Course, Deep Learning Specialization for educational purpose**
+
+### How to Run Code? <a name="MusicHowToRunCode"></a>
+* To run code, download music21 toolkit from [http://web.mit.edu/music21/](http://web.mit.edu/music21/). "pip install music21". 
+* Run main.py
+
+
+### Input File and Parameters <a name="MusicInput"></a>
+Model is trained with "data/original_music"
+* "X, Y, n_values, indices_values = load_music_utils()"
+* Number of training examples: 60,
+* Each of training examples length of sequence:30
+* Our music generation system will use 78 unique values. 
+
+* X: This is an (m,  Tx , 78) dimensional array. We have m training examples, each of which is a snippet of  Tx=30Tx=30  musical values. At each time step, the input is one of 78 different possible values, represented as a one-hot vector. Thus for example, X[i,t,:] is a one-hot vector representating the value of the i-th example at time t.
+* Y: This is essentially the same as X, but shifted one step to the left (to the past). 
+* n_values: The number of unique values in this dataset. This should be 78.
+* indices_values: python dictionary mapping from 0-77 to musical values.
+
+### LSTM Model in Music Generation <a name="MusicLSTM"></a>
+LSTM model structure is:
+
+<img width="1163" alt="music_generation" src="https://user-images.githubusercontent.com/10358317/44003036-cde60b9a-9e54-11e8-88d4-88d8c9ad0144.png">
+
+Model is implemented with "djmodel(Tx, n_a, n_values)" function.
+
+Predicting and Sampling:
+
+Adding model, predicting and sampling feature, model structure is: 
+
+<img width="1171" alt="music_gen" src="https://user-images.githubusercontent.com/10358317/44003040-d8f6335c-9e54-11e8-9260-ce930c271437.png">
+
+Music Inference Model is similar trained model and it is implemented with "music_inference_model(LSTM_cell, densor, n_values = 78, n_a = 64, Ty = 100)" function. Music is generated with "redict_and_sample" function.
+Finally, your generated music is saved in output/my_music.midi.
+
+
 
 ## Resources: <a name="Resources"></a>
 - [LSTM Original Paper](https://www.bioinf.jku.at/publications/older/2604.pdf)
 - Keras: [https://keras.io/](https://keras.io/)
 - Tensorflow: [https://www.tensorflow.org/](https://www.tensorflow.org/)
 - [LSTM in Detail](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+- [Music Toolkit: http://web.mit.edu/music21/](http://web.mit.edu/music21/)
 
 ## References: <a name="References"></a>
-- Andrew Ng, Sequential Models Course, Deep Learning Specialization
+- [Andrew Ng, Sequential Models Course, Deep Learning Specialization](https://github.com/Kulbear/deep-learning-coursera/tree/master/Sequence%20Models)
 - https://www.kaggle.com/pablocastilla/predict-stock-prices-with-lstm/notebook
 - Basic LSTM Code is  adapted from Andrew Ng's Course 'Sequential models'.
+
 
 
 
