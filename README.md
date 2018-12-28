@@ -45,7 +45,7 @@ In this tutorial, we are focusing on recurrent networks, especially LSTM. Basic 
 * The aim of this implementation is to help to learn structure of basic RNN (RNN cell forward, RNN cell backward, etc..).
 * Code is adapted from Andrew Ng's Course 'Sequential models'.
 
-Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Prediction/tree/master/BasicRNN
+Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Demo/tree/master/BasicRNN
 
 ### RNN Cell <a name="RNNCell"></a>
 
@@ -77,7 +77,7 @@ Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Predict
 - LSTM was proposed in 1997 by Sepp Hochreiter and Jürgen Schmidhuber and improved in 2000 by Felix Gers' team.
 [Paper](https://www.bioinf.jku.at/publications/older/2604.pdf) 
 
-Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Prediction/tree/master/BasicLSTM
+Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Demo/tree/master/BasicLSTM
 
 ### LSTM Cell <a name="LSTMCell"></a>
 
@@ -91,7 +91,7 @@ Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Predict
 ## SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network <a name="SampleStock"></a>
 Stock and ETFs prices are predicted using LSTM network (Keras-Tensorflow).
 
-Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Prediction/tree/master/Stock_Prices_Prediction_Example
+Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Demo/tree/master/StockPricesPredictionProject
 
 - Stock prices are downloaded from [finance.yahoo.com](https://finance.yahoo.com/). [Disneyland (DIS) Stock Price CSV file](https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Prediction/blob/master/Stock_Prices_Prediction_Example/DIS.csv).
 - Closed value (column[5]) is used in the network, [LSTM Code](https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Prediction/blob/master/Stock_Prices_Prediction_Example/pricePredictionLSTM.py)
@@ -109,7 +109,9 @@ Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Predict
 
 Sentiment Analysis is an analysis of the sentence, text at the document that gives us the opinion of the sentence/text. In this project, it will be implemented a model which inputs a sentence and finds the most appropriate emoji to be used with this sentence. Code is adapted from Andrew Ng's Course 'Sequential Models'.
 
-**NOTE:This project is adapted from Andrew Ng, Sequential Models Course, Deep Learning Specialization for educational purpose**
+**NOTE:This project is adapted from Andrew Ng, [Sequential Models Course](https://github.com/Kulbear/deep-learning-coursera/tree/master/Sequence%20Models), [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) for educational purpose**
+
+Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Demo/tree/master/SentimentAnalysisProject
 
 ### Results <a name="SentimentResults"></a>
 
@@ -146,7 +148,9 @@ Parameters:
 
 With trained DL model (LSTM), new sequences of time series data can be predicted. In this project, it will be implemented a model which inputs a sample jazz music and samples/generates a new music. Code is adapted from Andrew Ng's Course 'Sequential models'.
 
-**NOTE:This project is adapted from Andrew Ng, Sequential Models Course, Deep Learning Specialization for educational purpose**
+**NOTE:This project is adapted from Andrew Ng, [Sequential Models Course](https://github.com/Kulbear/deep-learning-coursera/tree/master/Sequence%20Models), [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) for educational purpose**
+
+Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Demo/tree/master/MusicGenerationProject
 
 ### How to Run Code? <a name="MusicHowToRunCode"></a>
 * To run code, download music21 toolkit from [http://web.mit.edu/music21/](http://web.mit.edu/music21/). "pip install music21". 
