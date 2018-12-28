@@ -47,10 +47,16 @@ Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Predict
 
 <img width="851" alt="rnn_cell_backprop" src="https://user-images.githubusercontent.com/10358317/44312587-661f8900-a403-11e8-831b-2cd7fae23dfb.png">
 
+### RNN Problem 
+- In theory, RNNs are absolutely capable of handling such “long-term dependencies.” 
+- In practice, RNNs don’t seem to be able to learn them. 
+- The problem was explored in depth by Hochreiter (1991) [German] and Bengio, et al. (1994) with [LSTM](https://www.bioinf.jku.at/publications/older/2604.pdf)
 
 ## What is LSTM? <a name="whatisLSTM"></a>
 
-"Long short-term memory (LSTM) units are units of a recurrent neural network (RNN). An RNN composed of LSTM units is often called an LSTM network. A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell"
+- It is a special type of RNN, capable of learning long-term dependencies.
+
+- "Long short-term memory (LSTM) units are units of a recurrent neural network (RNN). An RNN composed of LSTM units is often called an LSTM network. A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell"
 
 - Long Short Term Memory (LSTM) is a type of deep learning model that is mostly used for analysis of sequential data (time series data prediction). 
 
@@ -92,6 +98,7 @@ Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Stock_Prices_Predict
 - [LSTM Original Paper](https://www.bioinf.jku.at/publications/older/2604.pdf)
 - Keras: [https://keras.io/](https://keras.io/)
 - Tensorflow: [https://www.tensorflow.org/](https://www.tensorflow.org/)
+- [LSTM in Detail](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 ## References: <a name="References"></a>
 - Andrew Ng, Sequential Models Course, Deep Learning Specialization
