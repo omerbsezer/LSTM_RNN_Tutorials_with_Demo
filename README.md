@@ -47,17 +47,24 @@ In this tutorial, we are focusing on recurrent networks, especially LSTM. Basic 
 
 Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Demo/tree/master/BasicRNN
 
+
 ### RNN Cell <a name="RNNCell"></a>
 
 <img width="961" alt="rnn_step_forward" src="https://user-images.githubusercontent.com/10358317/44312581-5a33c700-a403-11e8-968d-a38dd0ab4401.png">
+
+[Andrew Ng, Sequential Models Course, Deep Learning Specialization]
 
 ### RNN Forward Pass <a name="RNNForward"></a>
 
 <img width="811" alt="rnn_fw" src="https://user-images.githubusercontent.com/10358317/44312584-6029a800-a403-11e8-9171-38cb22873bbb.png">
 
+[Andrew Ng, Sequential Models Course, Deep Learning Specialization]
+
 ### RNN Backward Pass <a name="RNNBackward"></a>
 
 <img width="851" alt="rnn_cell_backprop" src="https://user-images.githubusercontent.com/10358317/44312587-661f8900-a403-11e8-831b-2cd7fae23dfb.png">
+
+[Andrew Ng, Sequential Models Course, Deep Learning Specialization]
 
 ### RNN Problem <a name="RNNProblem"></a>
 - In theory, RNNs are absolutely capable of handling such “long-term dependencies.” 
@@ -83,9 +90,13 @@ Code: https://github.com/omerbsezer/LSTM_RNN_Tutorials_with_Demo/tree/master/Bas
 
 <img width="886" alt="lstm_cell" src="https://user-images.githubusercontent.com/10358317/44312843-34a8bc80-a407-11e8-96c3-cc2bc07f1500.png">
 
+[Andrew Ng, Sequential Models Course, Deep Learning Specialization]
+
 ### LSTM Forward Pass <a name="LSTMForward"></a>
 
 <img width="860" alt="lstm_fw" src="https://user-images.githubusercontent.com/10358317/44312846-3a060700-a407-11e8-878e-f1ce14cc98b4.png">
+
+[Andrew Ng, Sequential Models Course, Deep Learning Specialization]
 
 
 ## SAMPLE LSTM CODE: Prediction of Stock Prices Using LSTM network <a name="SampleStock"></a>
@@ -125,6 +136,8 @@ We have a tiny dataset (X, Y) where:
 
 <img width="847" alt="data_set" src="https://user-images.githubusercontent.com/10358317/43802586-eac883e6-9a9e-11e8-8f13-6471cc16a3d8.png">
 
+[Andrew Ng, Sequential Models Course, Deep Learning Specialization]
+
 ### Embeddings <a name="SentimentEmbeddings"></a>
 
 Glove 50 dimension, 40000 words of dictionary file is used for word embeddings. It should be downloaded from  https://www.kaggle.com/watts2/glove6b50dtxt (file size = ~168MB))
@@ -140,9 +153,13 @@ LSTM structure is used for classification.
 
 <img width="833" alt="emojifier-v2" src="https://user-images.githubusercontent.com/10358317/43802664-22c08c8a-9a9f-11e8-83e1-fea4bf334f6e.png">
 
+[Andrew Ng, Sequential Models Course, Deep Learning Specialization]
+
 Parameters:
 
 ![lstm_struct](https://user-images.githubusercontent.com/10358317/43803021-416cc59e-9aa0-11e8-8b28-6045dd0ead87.jpg)
+
+
 
 ## SAMPLE LSTM CODE: Music Generation  <a name="MusicGeneration"></a>
 
@@ -174,6 +191,8 @@ LSTM model structure is:
 
 <img width="1163" alt="music_generation" src="https://user-images.githubusercontent.com/10358317/44003036-cde60b9a-9e54-11e8-88d4-88d8c9ad0144.png">
 
+[Andrew Ng, Sequential Models Course, Deep Learning Specialization]
+
 Model is implemented with "djmodel(Tx, n_a, n_values)" function.
 
 ### Predicting and Sampling: <a name="MusicPredictingAndSampling"></a>
@@ -181,6 +200,8 @@ Model is implemented with "djmodel(Tx, n_a, n_values)" function.
 Adding model, predicting and sampling feature, model structure is: 
 
 <img width="1171" alt="music_gen" src="https://user-images.githubusercontent.com/10358317/44003040-d8f6335c-9e54-11e8-9260-ce930c271437.png">
+
+[Andrew Ng, Sequential Models Course, Deep Learning Specialization]
 
 Music Inference Model is similar trained model and it is implemented with "music_inference_model(LSTM_cell, densor, n_values = 78, n_a = 64, Ty = 100)" function. Music is generated with "redict_and_sample" function.
 Finally, your generated music is saved in output/my_music.midi.
